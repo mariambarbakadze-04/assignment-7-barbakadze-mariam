@@ -496,14 +496,15 @@ h4,
   color: white;
 }
 .footer-bottom {
-  margin: 35px 64px 0 64px;
-  max-width: 1170px;
-  max-height: 70px;
+  margin-left: 135px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 24px;
   padding-top: 24px;
+  justify-content: space-between;
   border-top: 1px solid #385159;
+  margin-right: 135px;
+  margin-top: 64px;
 }
 .footer-bottom p {
   color: white;
