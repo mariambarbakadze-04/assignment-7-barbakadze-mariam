@@ -38,14 +38,14 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   gap: 5rem;
-  padding: 0 0 3rem 0;
+  padding: 0 0 20px 0;
 }
 
 .hero-left-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 20px;
 }
 
 .hero-description {
@@ -145,7 +145,6 @@ nav {
 .s2-picture-container img {
   max-width: 560px;
   max-height: 520px;
-  object-fit: contain;
   border-radius: 12px;
 }
 
@@ -217,10 +216,14 @@ nav {
   height: 100%;
   transform: rotate(356deg);
 }
+.s2-content-container,
 .s3-content-container {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+}
+.s2-content-container {
+  flex-wrap: wrap-reverse;
 }
 
 .s3-content-container::after {
@@ -245,6 +248,7 @@ nav {
   max-height: 455px;
   background: url(./images/bg-pattern.png),
     linear-gradient(150deg, #faf5f3 72%, #9cc9da);
+  border-radius: 2%;
 }
 .heading-container {
   display: flex;
@@ -437,6 +441,11 @@ h4,
   flex-direction: column;
   gap: 32px;
 }
+.landing-page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-container {
   max-height: 521px;
   background: url(./images/bg-pattern-dark.png), #062630;
@@ -518,4 +527,162 @@ h4,
 }
 .footer-socials {
   gap: 24px;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .page-width {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6 {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 32px;
+    flex-wrap: wrap;
+  }
+  .hero {
+    margin: 132px 32px 60px 32px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hero-description {
+    max-width: 100%;
+  }
+  nav {
+    margin-left: 32px;
+    align-items: flex-start;
+  }
+
+  .testimonial-container {
+    gap: 20px;
+  }
+  .hero-image-container {
+    align-items: flex-start;
+  }
+  .s2-content-container {
+    width: 704px;
+  }
+  .s3-picture-container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .hero-image-container img,
+  .s3-picture-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .section-2 {
+    flex-wrap: wrap-reverse;
+  }
+  .s2-picture-container {
+    overflow: hidden;
+  }
+  .s2-picture-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .s3-content-container {
+    margin: 80px auto;
+    gap: 40px;
+  }
+  .s3-text-container,
+  .s2-text-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 704px;
+  }
+  .s3-content-container::after {
+    bottom: 2%;
+    left: 75%;
+  }
+  .reading-journay-container {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    width: 704px;
+  }
+  .journay-step-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-container {
+    text-align: left;
+    align-self: flex-start;
+    margin: 80px 0 40px 60px;
+  }
+  .js-1::after,
+  .js-2::after,
+  .js-3::after {
+    display: none;
+  }
+  .membership-cards {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    max-height: none;
+    width: 704px;
+  }
+  .section-5-headline {
+    justify-content: flex-start;
+  }
+  .membership-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 740px;
+    width: 704px;
+    gap: 8px;
+    margin-bottom: 80px;
+  }
+  .membership-card-2,
+  .membership-card-1,
+  .membership-card-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 298px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .membership-card-2 {
+    height: 322px;
+  }
+  .testimonial-text-container {
+    max-width: 970px;
+    height: fit-content;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+  .section-6-container {
+    text-align: left;
+    margin-left: 32px;
+  }
+  .quote-stars-container {
+    align-self: flex-start;
+  }
+  .footer-container {
+    max-height: none;
+  }
+  .footer-bottom {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-socials {
+    margin-right: 32px;
+  }
+  .footer-credits {
+    margin-left: 32px;
+  }
 }
