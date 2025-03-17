@@ -98,6 +98,10 @@ nav {
   display: flex;
 }
 
+.hero-image-container img {
+  max-width: 540px;
+}
+
 .testimonial-container {
   display: flex;
   gap: 12px;
