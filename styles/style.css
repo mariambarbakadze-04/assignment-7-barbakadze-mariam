@@ -538,6 +538,12 @@ h4,
   nav {
     padding-left: 32px;
   }
+  .hero-image-container img,
+  .s2-picture-container img,
+  .s3-picture-container img {
+    max-width: 704px;
+    width: 100%;
+  }
   .hero {
     gap: 3rem;
     padding: 62px 32px 80px 32px;
@@ -547,12 +553,6 @@ h4,
     width: 100%;
   }
 
-  .hero-image-container img,
-  .s3-picture-container img,
-  .s2-picture-container img {
-    width: 100%;
-    max-width: 704px;
-  }
   .section-2 {
     margin: 80px 0 80px 0;
   }
@@ -733,15 +733,16 @@ h4,
 
   .s2-text-container {
     padding: 0;
-    max-width: 301px;
   }
   .s2-list {
     gap: 16px;
   }
   .s2-content-container {
+    margin-left: 0;
     gap: 40px;
   }
   .s2-text-container h2 {
+    padding-right: 0;
     font-size: 32px;
   }
   .s2-picture-container img {
@@ -835,6 +836,7 @@ h4,
     width: 100%;
   }
   .membership-cards-container {
+    display: flex;
     margin: 20px 32px 0 20px;
     flex-direction: column;
   }
