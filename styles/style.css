@@ -151,12 +151,17 @@ p {
 .section-5 {
   margin: 0 auto;
 }
-.s2-content-container .s2-text-container {
-  margin: 44px 0 44px 80px;
-  max-width: 530px;
+.s2-content-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 80px;
+}
+.s2-text-container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  max-width: 530px;
   gap: 34px;
+  flex-direction: column;
 }
 .s3-text-container {
   display: flex;
@@ -541,20 +546,29 @@ h4,
     max-width: 704px;
     width: 100%;
   }
+
   .hero-image-container img,
   .s3-picture-container img,
   .s2-picture-container img {
     width: 100%;
     max-width: 704px;
   }
+  .section-2 {
+    margin: 80px 0 80px 0;
+  }
   .s2-content-container {
+    gap: 40px;
     max-width: 704px;
     width: 100%;
     margin-left: 32px;
   }
-  .s2-content-container .s2-text-container {
-    margin: 44px 0 44px 0px;
+  .s2-text-container {
+    margin: 0;
     max-width: 704px;
+    padding: 0;
+    max-width: 704px;
+    gap: 34px;
+    flex-direction: column;
   }
   .s2-list {
     max-width: 704px;
@@ -568,10 +582,14 @@ h4,
   .s3-text-container {
     max-width: 704px;
     width: 100%;
-    margin-bottom: 40px;
+    margin: 0 80px 40px 0;
   }
   .s3-content-container::after {
     left: 85%;
+  }
+  .section-4,
+  .section-6 {
+    margin: 80px auto;
   }
   .journay-step-container {
     display: flex;
@@ -621,7 +639,7 @@ h4,
   .membership-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 40px 32px;
+    margin: 40px 32px 0 32px;
   }
   .membership-card-1,
   .membership-card-2,
@@ -645,9 +663,7 @@ h4,
   .membership-card-2 button {
     width: 292px;
   }
-  .section-6 {
-    margin-bottom: 80px;
-  }
+
   .section-5-headline {
     justify-content: flex-start;
     margin-left: 32px;
@@ -706,22 +722,27 @@ h4,
     align-items: center;
     gap: 16px;
     text-transform: uppercase;
-    padding: 18px 2px;
+    padding: 18px;
     font-size: 16px;
     letter-spacing: -1px;
     font-weight: 600;
   }
   .section-2 {
-    margin: 0;
+    margin: 40px 16px;
   }
-  .s2-content-container .s2-text-container {
-    margin: 64px 16px;
+
+  .s2-text-container {
+    padding: 0;
+    max-width: 301px;
+  }
+  .s2-list {
+    gap: 16px;
+  }
+  .s2-content-container {
+    gap: 40px;
   }
   .s2-text-container h2 {
-    font-size: 34px;
-  }
-  .s2-picture-container {
-    margin: 0 16px;
+    font-size: 32px;
   }
   .s2-picture-container img {
     max-width: 343px;
@@ -814,7 +835,7 @@ h4,
     width: 100%;
   }
   .membership-cards-container {
-    margin: 20px 32px;
+    margin: 20px 32px 0 20px;
     flex-direction: column;
   }
   .membership-card-1,
