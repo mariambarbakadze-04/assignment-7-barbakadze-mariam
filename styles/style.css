@@ -530,7 +530,7 @@ h4,
   gap: 24px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .first-section {
     background: url(./images/bg-pattern.png),
       linear-gradient(126deg, #faf5f3 85%, #9cc9da);
@@ -692,7 +692,7 @@ h4,
   gap: 24px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 667px) {
   .first-section {
     background: url(./images/bg-pattern.png), #faf5f3;
   }
