@@ -737,6 +737,7 @@ h4,
   }
   .s2-content-container {
     margin-left: 0;
+    margin-right: 0;
     gap: 40px;
   }
   .s2-text-container h2 {
